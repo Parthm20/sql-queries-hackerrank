@@ -1,0 +1,72 @@
+
+
+i)	Table name : Client_Master 
+
+/*  
+Colum Name	DataType	Size
+Client_No	Varchar	6
+Name	Varchar	20
+Address1	Varchar	30
+Address2	Varchar	30
+City	Varchar	15
+State	Varchar	15
+Pincode	Number	6
+Bal_Due	Float	10.2
+*/
+
+Ans-I  Create following tables.
+create table client_master(
+client_No varchar(6),
+ Name varchar(20),
+address1 varchar(30),
+address2 varchar(30), 	
+City varchar(15), 
+state varchar(15), 
+Pincode number(6),
+ Bal_Due number(10,2)
+);
+
+ii)	Table Name: Product_Master 
+
+Ans ii- create table product_master(
+product_No varchar(6),
+Description varchar(20),
+Profit_percentage number(6),
+Unit_Measure varchar(10),
+Qty_On_Hand number(6),
+Reorder_Lvl number(6),
+Sell_Price number(7,2),
+Cost_Price number(7,2)
+);
+
+
+Colum Name	DataType	Size
+Product_NO	Varchar	6
+Description	Varchar	20
+Profit_percentage	Number	6
+Unit_Measure	Varchar	10
+Qty_On_Hand	Number	6
+Reorder_Lvl	Number	6
+Sell_Price	Float	7.2
+Cost_Price	Float	7.2
+
+1.	Add a new column DOB to table Client_Master.
+ALTER TABLE Client_Master
+ADD(DOB date)
+2.	Change the data type of Client_No to number.
+ALTER TABLE Client_Master
+Modify Client_No
+Number
+3.	Drop the newly added column DOB from Client_Master.
+ALTER TABLE Client_Master
+Drop column DOB
+4.	Rename the column Sell_Price in Product_Master table to SellPrice.
+ALTER TABLE Product_Master
+Rename column Sell_Price to  Sellprice
+5.	Rename the table Product_Master to ProductMaster.
+ALTER TABLE Product_Master
+rename to Product Master
+6.	Delete both the tables.
+Drop TABLE Product_Master
+Drop TABLE Client_Master
+
